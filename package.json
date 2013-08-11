@@ -1,0 +1,33 @@
+{
+    "name":"matrix-3d",
+    "version":"0.1.0",
+    "description":"Matrix 3D transformations (translate, rotate) with basic degree-radian conversions.",
+    "homepage":"https://github.com/murvinlai/matrix-3d",
+    "author": {
+        "name":   "Murvin Lai",
+        "email":  "murvinlai@gmail.com"
+    },
+    "scripts":{
+
+    },
+    "dependencies":{
+        "mathjs": ">= 0.11.1"
+    },
+    "devDependencies":{
+        
+    },
+    "keywords": [
+        "Matrix",
+        "3D",
+        "matrix-3d",
+        "matrix transformation",
+        "matrix translate",
+        "matrix rotate",
+        "degree to radian",
+        "round off cos"
+    ],
+    "repository": "git@github.com:murvinlai/matrix-3d.git",
+    "license": "MIT",
+    "main":"./index.js",
+    "engines": {    "node": "*" }
+}
