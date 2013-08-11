@@ -5,5 +5,6 @@ var data = [90, 180];
 var r = matrix3d.d2r(data[0]);
 console.log("Radian: " + r);
 var d = matrix3d.r2d(r);
+console.log("Degree: " + d);
 assert.equal(d, data[0]);
 
