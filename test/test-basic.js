@@ -11,11 +11,28 @@ console.log("Tx: " + JSON.stringify(m));
 assert.equal(m[0][3], x);
 
 var m = matrix3d.tranlate_y(y);
-console.log("Tz: " + JSON.stringify(m));
+console.log("Ty: " + JSON.stringify(m));
 assert.equal(m[1][3], y);
 
 var m = matrix3d.tranlate_z(z);
-console.log("Ty: " + JSON.stringify(m));
+console.log("Tz: " + JSON.stringify(m));
 assert.equal(m[2][3], z);
 
 // get the rotation matrix
+var d = 90;
+var m = matrix3d.rotate_x(d);
+console.log("Rx: " + JSON.stringify(m));
+assert.equal(m[1][1], 0);
+assert.equal(m[1][2], -1);
+
+var m = matrix3d.rotate_y(d);
+console.log("Ry: " + JSON.stringify(m));
+assert.equal(m[1][1], 1);
+assert.equal(m[1][2], 0);
+
+var m = matrix3d.rotate_z(d);
+console.log("Rz: " + JSON.stringify(m));
+assert.equal(m[0][1],-1);
+assert.equal(m[0][2], 0);
+
+
